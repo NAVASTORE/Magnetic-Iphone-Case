@@ -1,685 +1,512 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abaya Qismina Dewasa Muslimah - Elegant & Luxury</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Magnetic iPhone Case - Elegant Luxury Protection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #F8C8DC;
-            --secondary: #E2AFDE;
-            --accent: #D4A5A5;
-            --text: #5A5A5A;
-            --light: #FFF9FB;
-            --dark: #3A3A3A;
-            --gold: #D4AF37;
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        .product-gradient {
+            background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 100%);
         }
-        
-        body {
-            background-color: var(--light);
-            color: var(--text);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 20px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--light);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-        
-        .cta-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .cta-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-2px);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 60px 0;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-        
-        .hero p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        
-        .price-container {
-            background-color: white;
-            display: inline-block;
-            padding: 20px 40px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-        
-        .original-price {
-            text-decoration: line-through;
-            color: var(--text);
-            font-size: 24px;
-        }
-        
-        .discounted-price {
-            color: var(--accent);
-            font-size: 36px;
-            font-weight: 700;
-        }
-        
         .discount-badge {
-            background-color: var(--gold);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            display: inline-block;
-            margin-left: 10px;
+            animation: pulse 2s infinite;
         }
-        
-        .countdown {
-            font-size: 24px;
-            margin: 20px 0;
-            font-weight: 600;
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-        
-        /* Product Gallery */
-        .gallery {
-            padding: 60px 0;
-        }
-        
-        .gallery h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.03);
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        
-        /* Features */
-        .features {
-            padding: 60px 0;
-            background-color: white;
-        }
-        
-        .features h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-item {
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: 10px;
-            background-color: var(--light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        
-        .feature-item h3 {
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 60px 0;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .testimonials h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .testimonial-item {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            color: var(--text);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--dark);
-        }
-        
-        .stars {
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-        
-        /* FAQ */
-        .faq {
-            padding: 60px 0;
-        }
-        
-        .faq h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        
-        .faq-question {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        
-        .cta-section p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-        
-        .big-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 20px;
+        .gallery-image {
             transition: all 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            display: inline-block;
         }
-        
-        .big-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        .gallery-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: var(--primary);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #aaa;
-            font-size: 14px;
-        }
-        
-        /* Popup */
-        .popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            max-width: 300px;
-            transform: translateY(150%);
-            transition: transform 0.5s ease;
-            z-index: 1000;
-        }
-        
-        .popup.show {
-            transform: translateY(0);
-        }
-        
-        .popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .popup-close {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            color: var(--text);
-        }
-        
-        .popup-content {
-            display: flex;
-            align-items: center;
-        }
-        
-        .popup-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-            margin-right: 15px;
-            object-fit: cover;
-        }
-        
-        .popup-text {
-            font-size: 14px;
-        }
-        
-        .popup-text strong {
-            color: var(--accent);
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
-            .price-container {
-                padding: 15px 30px;
-            }
-            
-            .original-price {
-                font-size: 20px;
-            }
-            
-            .discounted-price {
-                font-size: 28px;
-            }
+        .countdown-timer {
+            font-family: 'Courier New', monospace;
         }
     </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-content">
-            <div class="logo">Abaya Qismina</div>
-            <a href="#order" class="cta-button">Pesan Sekarang</a>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header with Navigation -->
+    <header class="gradient-bg shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fab fa-apple text-3xl text-gray-700 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">MagneticCase</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#features" class="font-medium hover:text-gray-600">Features</a>
+                    <a href="#gallery" class="font-medium hover:text-gray-600">Gallery</a>
+                    <a href="#testimonials" class="font-medium hover:text-gray-600">Reviews</a>
+                    <a href="#faq" class="font-medium hover:text-gray-600">FAQ</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
-    
+
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Abaya Qismina Dewasa Muslimah</h1>
-            <p>Elegant & Luxury - Tampil anggun dengan detail bordir emas premium yang mewah</p>
-            
-            <div class="price-container">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
-            </div>
-            
-            <div class="countdown" id="countdown">
-                Promo berakhir dalam: 23:59:59
-            </div>
-            
-            <a href="#order" class="cta-button">Dapatkan Sekarang</a>
-        </div>
-    </section>
-    
-    <!-- Product Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2>Galeri Produk</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina Model 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_5151491750595682922.jpeg" alt="Abaya Qismina Model 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8080851750595683993.jpeg" alt="Abaya Qismina Model 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6839561750595683944.jpeg" alt="Abaya Qismina Model 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8897541750595682978.jpeg" alt="Abaya Qismina Model 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_4829401750595682954.jpeg" alt="Abaya Qismina Model 6">
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Features -->
-    <section class="features">
-        <div class="container">
-            <h2>Keunggulan Abaya Qismina</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-tshirt"></i>
+    <section class="gradient-bg py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">LIMITED STOCK</span>
+                <h1 class="text-4xl md:text-5xl font-bold mt-4 mb-6">Elegant Luxury <span class="text-blue-600">Magnetic iPhone Case</span></h1>
+                <p class="text-lg mb-8">Premium protection with built-in magnetic lens cover for iPhone 11-16 series. Free lens protector included!</p>
+                
+                <div class="flex items-center mb-6">
+                    <div class="discount-badge bg-red-600 text-white px-3 py-1 rounded-md font-bold mr-4">
+                        39% OFF
                     </div>
-                    <h3>Bahan Premium</h3>
-                    <p>Dibuat dari bahan Chiffon Rose yang ringan dan mengalir anggun, dilapisi sepenuhnya dengan jersey lembut untuk kenyamanan maksimal.</p>
+                    <div class="text-gray-600 line-through">Rp 303,600</div>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-spa"></i>
+                
+                <div class="text-3xl font-bold text-gray-900 mb-6">Rp 185,200</div>
+                
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mb-6">
+                    <p class="text-yellow-700 font-medium">🔥 HURRY! Only <span id="remaining-stock" class="font-bold">17</span> left at this price!</p>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Compatible with iPhone 11-16 all series</span>
                     </div>
-                    <h3>Desain Elegan</h3>
-                    <p>Potongan A-line yang mengalir indah saat Anda berjalan dengan desain lapisan ruffle yang menciptakan siluet yang anggun.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-crown"></i>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Free lens protector included</span>
                     </div>
-                    <h3>Detail Mewah</h3>
-                    <p>Detail bordir emas premium di ujung lengan dan lapisan abaya menambahkan sentuhan mewah namun halus.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-gift"></i>
+                    <div class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Premium magnetic attachment</span>
                     </div>
-                    <h3>Paket Lengkap</h3>
-                    <p>Dilengkapi dengan syal tangan yang serasi, terbuat dari kain yang sama dan dihiasi dengan aksen emas.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Apa Kata Pelanggan Kami?</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Abayanya sangat nyaman dipakai dan bahannya adem. Bordir emasnya bikin tampilan jadi lebih mewah. Recomended banget!"</p>
-                    <p class="testimonial-author">- Siti Aisyah, Jakarta</p>
+                
+                <a href="https://nava.orderonline.id/magnetic-iphone-case" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-flex items-center transition duration-300">
+                    <span>ORDER NOW</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                
+                <div class="mt-4 text-sm text-gray-600 flex items-center">
+                    <i class="fas fa-lock mr-2"></i>
+                    <span>Secure checkout with SSL encryption</span>
                 </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Pas banget buat acara pernikahan teman. Banyak yang nanya beli dimana. Pelayanannya juga cepat dan ramah."</p>
-                    <p class="testimonial-author">- Rina Dewi, Bandung</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">"Desainnya feminin banget dan jatuhnya pas di badan. Udah beli 2 warna karena diskonnya menggiurkan."</p>
-                    <p class="testimonial-author">- Maya Fitriani, Surabaya</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
-            <div class="faq-item">
-                <h3 class="faq-question">Apa saja ukuran yang tersedia?</h3>
-                <p>Abaya Qismina tersedia dalam ukuran S, M, L, dan XL dengan cutting yang nyaman dan sesuai untuk tubuh wanita Asia.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Berapa lama waktu pengiriman?</h3>
-                <p>Waktu pengiriman 2-4 hari kerja untuk wilayah Jawa dan 3-7 hari kerja untuk luar Jawa setelah pembayaran dikonfirmasi.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Apakah bisa return atau tukar ukuran?</h3>
-                <p>Kami menerima penukaran ukuran dalam waktu 7 hari setelah barang diterima dengan syarat tag masih terpasang dan belum dicuci.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Metode pembayaran apa saja yang tersedia?</h3>
-                <p>Kami menerima transfer bank (BCA, Mandiri, BRI), e-wallet (OVO, Dana, ShopeePay), dan pembayaran via gerai retail (Alfamart, Indomaret).</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="cta-section" id="order">
-        <div class="container">
-            <h2>Jangan Lewatkan Kesempatan Ini!</h2>
-            <p>Dapatkan Abaya Qismina dengan diskon 45% hanya hari ini. Stok terbatas!</p>
-            
-            <div class="price-container" style="margin-bottom: 30px;">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
             </div>
             
-            <a href="https://nava.orderonline.id/abaya-qismina-dewasa-muslimah" class="big-button">Pesan Sekarang</a>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="product-gradient p-6 rounded-xl shadow-xl relative">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6l5h29casd64.webp" alt="Magnetic iPhone Case" class="w-full h-auto rounded-lg max-w-md">
+                    <div class="absolute -bottom-4 -right-4 bg-white p-2 rounded-full shadow-lg">
+                        <div class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">
+                            NEW ARRIVAL
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
+
+    <!-- Trust Badges -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-3xl text-blue-600 mr-3"></i>
+                    <div>
+                        <div class="font-bold">Premium Protection</div>
+                        <div class="text-sm text-gray-600">Military-grade</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-magnet text-3xl text-blue-600 mr-3"></i>
+                    <div>
+                        <div class="font-bold">Strong Magnet</div>
+                        <div class="text-sm text-gray-600">Secure attachment</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-gem text-3xl text-blue-600 mr-3"></i>
+                    <div>
+                        <div class="font-bold">Elegant Design</div>
+                        <div class="text-sm text-gray-600">Luxury feel</div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-truck text-3xl text-blue-600 mr-3"></i>
+                    <div>
+                        <div class="font-bold">Fast Shipping</div>
+                        <div class="text-sm text-gray-600">2-3 days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Why Choose Our Magnetic iPhone Case?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Designed for those who demand both style and superior protection for their iPhone</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Built-in Lens Protection</h3>
+                    <p class="text-gray-600">Integrated magnetic lens cover protects your iPhone camera from scratches and damage when not in use.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multi-Layer Protection</h3>
+                    <p class="text-gray-600">Shock-absorbing TPU combined with a hard polycarbonate shell provides military-grade drop protection.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Strong Magnetic Attachment</h3>
+                    <p class="text-gray-600">Powerful neodymium magnets ensure secure attachment while allowing easy removal when needed.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Precise Cutouts</h3>
+                    <p class="text-gray-600">Perfectly aligned openings for all buttons, ports, and speakers without compromising protection.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Premium Materials</h3>
+                    <p class="text-gray-600">High-quality materials that resist yellowing and maintain clarity while providing a luxurious feel.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Full Compatibility</h3>
+                    <p class="text-gray-600">Available for all iPhone models from 11 to 16 series, including Pro and Pro Max versions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Explore Our Premium iPhone Case</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See the elegant design and premium protection from every angle</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-image overflow-hidden rounded-lg">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6l5h29casd64.webp" alt="Magnetic iPhone Case Front View" class="w-full h-auto object-cover">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-lg">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6l5h29dpct91.webp" alt="Magnetic iPhone Case Side View" class="w-full h-auto object-cover">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-lg">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6nkmg1vys9cd.webp" alt="Magnetic iPhone Case with Lens Cover" class="w-full h-auto object-cover">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-lg">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6nkmg206hld6.webp" alt="Magnetic iPhone Case Back View" class="w-full h-auto object-cover">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-lg">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6nkmg1xdcp6f.webp" alt="Magnetic iPhone Case on iPhone" class="w-full h-auto object-cover">
+                </div>
+                <div class="gallery-image overflow-hidden rounded-lg">
+                    <img src="https://down-sg.img.susercontent.com/file/cn-11134207-7r98o-ln6nkmg1t5lpe6.webp" alt="Magnetic iPhone Case Close-up" class="w-full h-auto object-cover">
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://nava.orderonline.id/magnetic-iphone-case" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-flex items-center transition duration-300">
+                    <span>GET YOUR CASE NOW</span>
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from satisfied iPhone users</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J.">
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold">Sarah J.</div>
+                            <div class="flex items-center text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-gray-600 ml-2">5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The magnetic lens cover is genius! My iPhone 14 Pro camera stays protected, and the case itself feels so premium. Worth every penny!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold">Michael T.</div>
+                            <div class="flex items-center text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-gray-600 ml-2">5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I've dropped my phone twice since getting this case, and not a single scratch! The magnets are strong but easy to use. Perfect balance."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex -space-x-2">
+                            <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa M.">
+                        </div>
+                        <div class="ml-4">
+                            <div class="font-bold">Lisa M.</div>
+                            <div class="flex items-center text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-gray-600 ml-2">4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Love how slim and elegant this case is while providing great protection. The free lens protector was a nice bonus too!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited Offer Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Limited Time Offer - 39% OFF!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Upgrade your iPhone protection today with our premium magnetic case at an exclusive discount</p>
+            
+            <div class="bg-white text-gray-800 rounded-lg p-6 max-w-2xl mx-auto mb-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <div class="text-sm text-gray-600">Original Price</div>
+                        <div class="text-xl line-through">Rp 303,600</div>
+                    </div>
+                    <div class="text-4xl text-blue-600 font-bold">→</div>
+                    <div class="mt-4 md:mt-0">
+                        <div class="text-sm text-gray-600">Discounted Price</div>
+                        <div class="text-3xl font-bold text-red-600">Rp 185,200</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <div class="inline-block bg-red-600 text-white px-4 py-2 rounded-full font-bold mb-4">
+                    OFFER ENDS IN: <span id="countdown" class="countdown-timer">23:59:59</span>
+                </div>
+                <p class="text-blue-100">Only <span id="remaining-stock-2" class="font-bold">17</span> units left at this price!</p>
+            </div>
+            
+            <a href="https://nava.orderonline.id/magnetic-iphone-case" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-4 px-12 rounded-lg inline-flex items-center transition duration-300 text-lg">
+                <span>CLAIM YOUR DISCOUNT NOW</span>
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to know about our Magnetic iPhone Case</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6 border-b pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Which iPhone models is this case compatible with?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        Our Magnetic iPhone Case is compatible with all iPhone models from iPhone 11 through iPhone 16 series, including Pro and Pro Max versions. The case comes in specific sizes tailored for each model to ensure perfect fit and full functionality.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>How strong are the magnets in the case?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        The case features powerful neodymium magnets that provide a secure attachment for the lens cover and any magnetic accessories. The magnets are strong enough to keep everything in place during daily use but still allow for easy removal when needed.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Does the case provide good drop protection?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        Yes! Our case combines a shock-absorbing TPU inner layer with a hard polycarbonate outer shell to provide military-grade drop protection (tested up to 6 feet). The raised edges also protect your screen and camera from direct impact when placed on flat surfaces.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>Is the lens protector included?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        Absolutely! Each Magnetic iPhone Case comes with a free high-quality lens protector that's easy to apply and provides additional scratch protection for your iPhone's camera lenses.
+                    </div>
+                </div>
+                
+                <div class="mb-6 border-b pb-4">
+                    <button class="flex justify-between items-center w-full text-left font-bold text-lg">
+                        <span>How long does shipping take?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-2 text-gray-600 hidden">
+                        We offer fast shipping with most orders arriving within 2-3 business days after processing. You'll receive a tracking number as soon as your order ships so you can follow its journey to your doorstep.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Protect Your iPhone in Style?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Don't miss this limited-time offer for our premium Magnetic iPhone Case with 39% discount</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-10">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="text-sm text-gray-600 mb-1">Today's Price</div>
+                    <div class="text-3xl font-bold text-blue-600">Rp 185,200</div>
+                    <div class="text-sm text-gray-600 mt-1">39% OFF</div>
+                </div>
+                
+                <div class="text-2xl hidden md:block">→</div>
+                
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="text-sm text-gray-600 mb-1">You Save</div>
+                    <div class="text-3xl font-bold text-green-600">Rp 118,400</div>
+                    <div class="text-sm text-gray-600 mt-1">Original Rp 303,600</div>
+                </div>
+            </div>
+            
+            <a href="https://nava.orderonline.id/magnetic-iphone-case" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded-lg inline-flex items-center transition duration-300 text-lg mb-4">
+                <span>GET YOUR CASE NOW</span>
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+            
+            <div class="mt-6 text-sm text-gray-600 flex items-center justify-center">
+                <i class="fas fa-lock mr-2"></i>
+                <span>Secure checkout • 30-day money back guarantee</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Tentang Kami</h3>
-                    <p>Menghadirkan busana muslimah berkualitas tinggi dengan desain elegan dan harga terjangkau.</p>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MagneticCase</h3>
+                    <p class="text-gray-400">Premium protection for your iPhone with elegant luxury design and built-in magnetic lens cover.</p>
                 </div>
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> 0852-3669-9497</li>
-                        <li><i class="fas fa-envelope"></i> cs@abayaqismina.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white">Gallery</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Link Cepat</h3>
-                    <ul>
-                        <li><a href="#order">Pesan Sekarang</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns & Warranty</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Follow Kami</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Stay Connected</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="text-gray-400">Subscribe for exclusive offers</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="px-3 py-2 bg-gray-700 text-white rounded-l focus:outline-none w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 rounded-r">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                &copy; 2023 Abaya Qismina. All Rights Reserved.
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 MagneticCase. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Popup -->
-    <div class="popup" id="popup">
-        <div class="popup-header">
-            <h4>Promo Spesial!</h4>
-            <button class="popup-close" id="popup-close">&times;</button>
-        </div>
-        <div class="popup-content">
-            <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina" class="popup-img">
-            <div class="popup-text">
-                <strong>Diskon 45% Hari Ini!</strong> Dapatkan Abaya Qismina dengan harga Rp245.000 saja. Stok terbatas!
-            </div>
-        </div>
-    </div>
-    
+
     <script>
-        // Countdown Timer
+        // Countdown timer
         function updateCountdown() {
             const now = new Date();
             const endOfDay = new Date();
@@ -692,29 +519,31 @@
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
             document.getElementById('countdown').textContent = 
-                `Promo berakhir dalam: ${Math.floor(hours)}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }
         
         setInterval(updateCountdown, 1000);
         updateCountdown();
         
-        // Popup
-        setTimeout(() => {
-            document.getElementById('popup').classList.add('show');
-        }, 5000);
+        // Stock countdown (simulated)
+        let stock = 17;
+        setInterval(() => {
+            if (stock > 0 && Math.random() > 0.7) {
+                stock--;
+                document.getElementById('remaining-stock').textContent = stock;
+                document.getElementById('remaining-stock-2').textContent = stock;
+            }
+        }, 30000);
         
-        document.getElementById('popup-close').addEventListener('click', () => {
-            document.getElementById('popup').classList.remove('show');
-        });
-        
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+        // FAQ accordion
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
                 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                content.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
             });
         });
     </script>
